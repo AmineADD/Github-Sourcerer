@@ -1,6 +1,8 @@
 import { FC } from "react";
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Script from 'next/script'
+
 import {
   ApolloClient,
   InMemoryCache,
@@ -18,9 +20,9 @@ const Home: FC<props> = ({ provider }) => {
         <meta name="description" content="Profile Github" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://unpkg.com/react-vis/dist/style.css" />
-        <script type="text/javascript" src="https://unpkg.com/react-vis/dist/dist.min.js"></script>
       </Head>
 
+      <Script type="text/javascript" src="https://unpkg.com/react-vis/dist/dist.min.js"></Script>
       <Main provider={provider} />
     </div>
   )

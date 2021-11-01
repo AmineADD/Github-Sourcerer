@@ -1,7 +1,7 @@
 
 export type props = {
-    provider?: {
-        avatarUrl?: string;
+    provider: {
+        avatarUrl: string;
         bio?: string;
         followers?: {
             totalCount: number

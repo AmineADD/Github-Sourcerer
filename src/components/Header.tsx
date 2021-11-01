@@ -4,6 +4,7 @@ import { props } from '../configs/Types'
 import ContainerBox from "./Contents/ContainerBox";
 import styles from '../../styles/Main.module.css'
 import { DATA } from "../Data/Data"
+import Image from 'next/image'
 
 
 const Header: FC<props> = ({ provider }): JSX.Element => {
@@ -71,6 +72,7 @@ const Header: FC<props> = ({ provider }): JSX.Element => {
         , getLinesOfFollowers()
         , getLinesOfFollowing()
     ]
+    const src = provider?.avatarUrl;
     return (
         <div className={styles.header}>
             <div className={styles.description}>
@@ -80,7 +82,14 @@ const Header: FC<props> = ({ provider }): JSX.Element => {
             <div className={styles.containerImageBox}>
                 <span className={styles.containerImageTitle}>
                     <span className={styles.titleFont}>{provider?.name}</span>
-                    <img className={styles.image} src={provider?.avatarUrl} alt={DATA.ALT} />
+                    <Image
+                        className={styles.image}
+                        src={src}
+                        alt={DATA.ALT}
+                        loader={() => src}
+                        width={150}
+                        height={150}
+                    />
                 </span>
                 <ContainerBox arrayOfBoxes={arrayOfBoxes} />
             </div>
