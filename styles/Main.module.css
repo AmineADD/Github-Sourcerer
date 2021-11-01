@@ -1,0 +1,46 @@
+.main{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+} 
+
+.containerImageTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.containerImageBox{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+    position: relative;
+    top: 5.9rem;
+}
+
+.header{ 
+   background-color: #f0f4f0;
+}
+
+.image{
+    padding: 1rem;
+    border-radius: 100%;
+}
+.description{ 
+    padding-top: 2rem;
+    padding-left:5rem ;
+    padding-right:5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titleFont{
+    font-size: larger;
+    font-weight: bold;
+}

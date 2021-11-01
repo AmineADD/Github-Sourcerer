@@ -1,0 +1,39 @@
+.Charts{
+   
+    padding-top: 2rem;
+    padding-left: 14rem;
+    padding-right: 14rem;
+    margin: 5rem; 
+}
+
+.titleFont{
+    font-size: larger;
+    font-weight: bold;
+    display: block;
+}
+
+
+.insideLanguagesCharts{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.boxes{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+.cercle{
+    width: 50%;
+    background-color: #f0f4f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
